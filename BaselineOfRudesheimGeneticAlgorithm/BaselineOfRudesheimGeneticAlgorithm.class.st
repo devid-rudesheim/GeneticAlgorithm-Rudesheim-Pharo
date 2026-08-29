@@ -18,13 +18,13 @@ BaselineOfRudesheimGeneticAlgorithm >> baseline: spec [
 				with:
 				[
 					spec
-						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:main'.
+						repository:	'github://devid-rudesheim/Kernel-Rudesheim-Pharo:develop'.
 				];
 				baseline:	'RudesheimMachineLearning'
 				with:
 				[
 					spec
-						repository:	'github://devid-rudesheim/MachineLearning-Rudesheim-Pharo:main'.
+						repository:	'github://devid-rudesheim/MachineLearning-Rudesheim-Pharo:develop'.
 				];
 				package:	'Rudesheim-GeneticAlgorithm'
 				with:
