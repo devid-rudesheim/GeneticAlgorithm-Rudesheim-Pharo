@@ -26,17 +26,30 @@ BaselineOfRudesheimGeneticAlgorithm >> baseline: spec [
 					spec
 						repository:	'github://devid-rudesheim/MachineLearning-Rudesheim-Pharo:main'.
 				];
+				baseline:	'RudesheimUtility'
+				with:
+				[
+					spec
+						repository:	'github://devid-rudesheim/Utility-Rudesheim-Pharo:main'.
+				];
 				package:	'Rudesheim-GeneticAlgorithm'
 				with:
 				[
 					spec
 						requires:	#( 'RudesheimKernel' 'RudesheimMachineLearning' ).
 				];
+				project:	'RudesheimUtilityTests'
+				copyFrom:	'RudesheimUtility'
+				with:
+				[
+					spec
+						loads:	#( 'tests' ).
+				];
 				package:	'Rudesheim-GeneticAlgorithm-Tests'
 				with:
 				[
 					spec
-						requires:	#( 'Rudesheim-GeneticAlgorithm' ).
+						requires:	#( 'Rudesheim-GeneticAlgorithm' 'RudesheimUtilityTests' ).
 				];
 				group:	#core
 				with:	#( 'Rudesheim-GeneticAlgorithm' );
