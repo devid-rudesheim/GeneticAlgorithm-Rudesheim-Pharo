@@ -5,19 +5,19 @@ namespace class; genetic-algorithm behavior itself is added by a later implement
 "
 Class {
 	#name : 'GeneticAlgorithmMachineLearningRudesheimTest',
-	#superclass : 'TestCase',
+	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-GeneticAlgorithm-Tests',
 	#package : 'Rudesheim-GeneticAlgorithm-Tests'
 }
 
 { #category : 'accessing' }
 GeneticAlgorithmMachineLearningRudesheimTest class >> targetClass [
-	^ Rudesheim.
+	^ Rudesheim MachineLearning GeneticAlgorithm.
 ]
 
 { #category : 'tests' }
 GeneticAlgorithmMachineLearningRudesheimTest >> testGeneticAlgorithmResolvesFromRudesheimMachineLearning [
 	self
-		assert:	self class targetClass MachineLearning GeneticAlgorithm
+		assert:	self targetClass
 		equals:	GeneticAlgorithmMachineLearningRudesheim.
 ]
